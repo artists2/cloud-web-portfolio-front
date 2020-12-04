@@ -49,9 +49,9 @@ body .login-main-container {
     margin: auto;
   }
   
-  .login-button-wrap button {
+  /* .login-button-wrap button {
     text-align: center;
-  }
+  } */
   
   .signup-button-wrap {
     margin-left: 150px;
