@@ -1,10 +1,10 @@
 export const confidence = [
     {
-        hour: 10, samsung: 19, bighit: 29, shinpoong: 32,
+        hour: 10, samsung: 5000, bighit: 6000, shinpoong: 7000,
     }, {
-        hour: 11, samsung: 13, bighit: 32, shinpoong: 33,
+        hour: 11, samsung: 12000, bighit: 10000, shinpoong: 3000,
     }, {
-        hour: 12, samsung: 14, bighit: 35, shinpoong: 30,
+        hour: 12, samsung: 7000, bighit: 5000, shinpoong: 6700,
     }, {
         hour: 13, samsung: 13, bighit: 32, shinpoong: 34,
     }, {

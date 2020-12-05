@@ -8,7 +8,7 @@ function Signin() {
       <div className="login-main-container">
         <div className="main-container">
           <header className="main-wrap">
-            <h1>Stock Portfolio</h1>
+            <h1>User</h1>
           </header>
           <div className="login-form">
             <Form>

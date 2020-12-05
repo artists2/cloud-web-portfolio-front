@@ -6,11 +6,9 @@ export const TopmenuData = [
         title: 'Signin',
         icon:  <AiIcons.AiOutlineUser />,
         path: '/signin',
-    },
-    {
-        title: 'Notice',
+    }, {
+        title: 'Notify',
         icon: <AiIcons.AiOutlineBell />,
-        path: '/notice',
+        path: '/notify'
     }
-
 ]

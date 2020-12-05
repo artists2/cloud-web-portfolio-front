@@ -59,7 +59,7 @@ const ValueLabel = (props) => {
   return (
     <ValueAxis.Label
       {...props}
-      text={`${text}%`}
+      text={`${text}원`}
     />
   );
 };
