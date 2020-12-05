@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Main from "./Page/Main";
 import Login from "./Page/Login"
+import Stocksale from "./Page/Stocksale"
 import {makeStyles} from '@material-ui/core/styles';
 
 
@@ -29,6 +30,7 @@ function App() {
                 <Switch>
                     <Route path={'/'} exact component={Login}/>
                     <Route path={'/dashboard'} component={Main}/>
+                    <Route path={'/stocksale'} component={Stocksale}/>
                 </Switch>
 
             </Router>
