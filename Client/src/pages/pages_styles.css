@@ -56,11 +56,7 @@ body .login-main-container {
 
 .StockForm {
   display: flex;
-  margin: 52rem;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 20px;
-  border: solid 2px;
-  border-color: rgb(0, 0, 0);
-
 }

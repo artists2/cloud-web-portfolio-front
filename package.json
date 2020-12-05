@@ -2,15 +2,20 @@
     "name": "cloud",
     "version": "0.1.0",
     "scripts": {
-        "client": "cd client && npm start",
+        "client": "cd client && yarn start",
         "server": "nodemon server.js",
-        "dev": "concurrently --kill-others-on-fail \"npm server\" \"npm client\""
+        "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
     },
     "dependencies": {
-        "body-parser": "^1.18.3",
-        "express" : "^4.16.4"
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "yarn": "^1.22.10"
     },
     "devDependencies": {
-        "concurrently": "^4.0.1"
-    }
+        "concurrently": "^4.1.2"
+    },
+    "main": "index.js",
+    "repository": "https://github.com/artists2/cloud-web-portfolio-front",
+    "author": "CheeNae <jo6876@naver.com>",
+    "license": "MIT"
 }

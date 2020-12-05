@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomerAdd from '../pages/Add-Stock';
+import StockAdd from '../pages/Add-Stock';
 
 
 // function Notify() {
@@ -11,8 +11,8 @@ import CustomerAdd from '../pages/Add-Stock';
 
 function Notify() {
    return(
-        <div className='notify'>
-        <CustomerAdd/>
+        <div className='StockForm'>
+        <StockAdd/>
     </div>
    );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {post} from 'axios';
 
-class CustomerAdd extends React.Component {
+class StockAdd extends React.Component {
 
     constructor(props) {
         super (props);
@@ -12,16 +12,11 @@ class CustomerAdd extends React.Component {
     }
 
     handleFormSubmit = (e) => {
-        e.prevenDefault()
+        e.preventDefault()
         this.addstock()
             .then((response) => {
                 console.log(response.data);
             })
-        this.setState({
-            Name:'',
-            birthday:''
-        })
-        window.location.reload();
     }
 
     handleValueChange = (e) => {
@@ -34,7 +29,6 @@ class CustomerAdd extends React.Component {
         const url = '/api/notification';
         const formData = new FormData();
         formData.append('name', this.state.stockName);
-        formData.append('birthday', this.state.birthday);
         const config = {
             headers: {
                 'content-type' : 'multipart/form-data'
@@ -48,14 +42,10 @@ class CustomerAdd extends React.Component {
             <form onSubmit={this.handleFormSubmit}>
                 <h2>관심종목 추가</h2>
                 관심종목:<input type="text" name="stockName" value={this.state.stockName} onChange={this.handleValueChange}/><br/>
-                생일:<input type='text' name="birthday" value={this.state.birthday} onChange={this.handleValueChange}/><br/>
                 <button type="submit">추가하기</button>
             </form>
         )
     }
 }
 
-export default CustomerAdd;
-
-
- 
+export default StockAdd;
