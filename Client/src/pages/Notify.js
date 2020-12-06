@@ -29,7 +29,10 @@ class Notify extends React.Component {
    render() {
         return(
             <div>
-                {<Table>
+                <div className="addstock">
+                    <NotifyTableAdd/>
+                </div>
+                <Table>
                     <TableHead>
                         <TableRow>
                             <TableCell>구분</TableCell>
@@ -43,8 +46,8 @@ class Notify extends React.Component {
                         return(<NotifyTable stateRefresh={this.stateRefresh} key={c.number} number={c.number} stockName={c.stockName} price={c.price}/>);
                     }) : ""}
                     </TableBody>
-                </Table>}
-                <NotifyTableAdd/>
+                </Table>
+                
             </div>
             );
         }
